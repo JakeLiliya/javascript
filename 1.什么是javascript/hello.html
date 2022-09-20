@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我是个好看的标题</title>
+    <!-- defer 立即下载，但延迟执行 -->
+    <script defer src="./hello.js"></script>
+    <script async src="./test.js"></script>
+    <!-- async 不必等脚本下载和执行完后再加载页面，也不必等到该异步脚本下载和执行后再加载其他脚本 -->
+    <!-- script标签都放在heade中 -->
+    <!-- 按顺序执行script标签 -->
+    <!-- 对于需要很多javascript的月面，会导致页面渲染明显延迟，在此期间浏览器窗口完全空白 -->
+</head>
+
+<body>
+    <!-- 放在body里，页面会在处理javascript代码之前完全渲染界面，用户觉得页面加载更快，浏览器显示空白页面的时间短了 -->
+    123213
+</body>
+
+</html>
